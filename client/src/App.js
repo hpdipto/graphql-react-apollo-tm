@@ -10,7 +10,7 @@ import Launch from './components/Launch';
 
 const cache = new InMemoryCache();
 const link = createHttpLink({
-  uri: 'http://localhost:5000/graphql'
+  uri: '/graphql'
 });
 
 const client = new ApolloClient({
