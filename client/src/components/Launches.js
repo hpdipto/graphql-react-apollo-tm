@@ -2,6 +2,7 @@ import React from 'react';
 import { gql, useQuery } from '@apollo/client';
 
 import LaunchItem from './LaunchItem';
+import MissionKey from './MissionKey';
 
 
 const LAUNCHES_QUERY = gql`
@@ -22,6 +23,7 @@ function Launches() {
     return (
         <div>
             <h1 className="display-4 my-3">Launches</h1>
+            <MissionKey />
             {loading && <h4>Loading...</h4>}
             {error && <h4>Error!</h4>}
             {data &&
